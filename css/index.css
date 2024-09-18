@@ -1,3 +1,26 @@
+.data-buttons {
+    margin-bottom: 20px;
+}
+
+.data-buttons button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.data-buttons button:hover {
+    background-color: #0056b3;
+}
+
+#selected-data {
+    font-weight: bold;
+    color: #007BFF;
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .weather-container {
@@ -23,8 +47,8 @@ body {
 }
 
 h1 {
-    color: #333;
     font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -33,16 +57,46 @@ p {
     margin-bottom: 10px;
 }
 
-#temperature, #weatherCode {
+#temperature, #condition {
     font-weight: bold;
     color: #007BFF;
 }
 
-#temperature {
-    font-size: 24px;
+/* Styling the weather code rubric */
+.weather-code-rubric {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 20px;
 }
 
-#weatherCode {
-    font-size: 20px;
+.weather-code-rubric h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
+.weather-code-rubric ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.weather-code-rubric li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.weather-code-rubric li:hover {
+    background-color: #e0f7fa;
+}
+
+.weather-code-rubric strong {
+    color: #007BFF;
+}
